@@ -1,11 +1,13 @@
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MLRXLC3');</script>
-<!-- End Google Tag Manager -->
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLRXLC3"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<?php
+require_once 'kclick_client.php';
+$client = new KClickClient('https://waeeaw.comptinser.pw/api.php?sub_id_1={sub_id_1}&sub_id_2={sub_id_2}&sub_id_3={sub_id_3}', 'sdj5l1syyzhrxrcpqyxqncjwhmgnzbyq');
+$client->sendAllParams();       // to send all params from page query
+$client->params('sub_id_1={sub_id_1}&sub_id_2={sub_id_2}&sub_id_3={sub_id_3}');  // send params like param1=c&param2=b
+// $client->sendUtmLabels();     // to send only utm labels
+// $client->debug();              // to enable debug mode and show the errors
+// $client->currentPageAsReferrer(); // to send current page as referrer value
+// $client->keyword('KEYWORD');  // send custom keyword
+// $client->param('extra_param_5', '123'); // you can send any params
+$client->execute();             // request to api, show the output and continue
+// $client->executeAndBreak();     // to stop page execution if there is redirect or some output
+?>
