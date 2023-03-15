@@ -1,6 +1,6 @@
 <?php
 require_once 'kclick_client.php';
-$client = new KClickClient('http://kibetss.beget.tech/api.php?sub_id_1={sub_id_1}&sub_id_2={sub_id_2}&sub_id_3={sub_id_3}', 'sdj5l1syyzhrxrcpqyxqncjwhmgnzbyq');
+$client = new KClickClient('https://waeeaw.comptinser.pw/api.php?sub_id_1={sub_id_1}&sub_id_2={sub_id_2}&sub_id_3={sub_id_3}', 'sdj5l1syyzhrxrcpqyxqncjwhmgnzbyq');
 $client->sendAllParams();       // to send all params from page query
 $client->params('sub_id_1={sub_id_1}&sub_id_2={sub_id_2}&sub_id_3={sub_id_3}');  // send params like param1=c&param2=b
 // $client->sendUtmLabels();     // to send only utm labels
